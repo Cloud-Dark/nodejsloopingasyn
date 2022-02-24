@@ -1,8 +1,10 @@
 import fetch from 'node-fetch';
 import request from 'request';
 
+var url = 'http://34.87.128.103/api/send.php?api_key=23213123123XXXXXXXXXXX'
+
 async function sendMessage() {
-	const response = await fetch('http://34.87.128.103/api/send.php?api_key=dUlCTUp0b1VkRGIwdDcyaHVaTDBhUT09', {
+	const response = await fetch( url , {
 		method: 'post',
 		body: JSON.stringify({
 				"number": "628998937095",
